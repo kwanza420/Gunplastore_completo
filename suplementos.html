@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="css/kits.css" />
+    <title>Tienda</title>
+</head>
+
+<body>
+    <header class="cajasuperior">
+        <nav class="navlist">
+          <h1 onclick="volver()">FullFrontal GunplaStore</h1>
+            <ul class="minicaja">
+                <div class="link-header">
+                    <li><a href="kits.html">Kits Gundam</a></li>
+                </div>
+                <div class="link-header">
+                    <li><a href="suplementos.html">suplementos</a></li>
+                </div>
+                <div class="link-header">
+                    <li><a href="proximosingresos.html">proximos ingresos</a></li>
+                </div>
+                <div class="caja_carrito">
+                    <div class="icono_carrito">
+                        <i id="icono" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div id="resto" class="resto_caja hide">
+                        <h2>carro de compras</h2>
+                        <div class="wrapper">
+                          <!--
+                            <div class="item_carrito">
+                                <img src="img/frutilla.jpg" alt="imagen de prueba" />
+                                <div class="detalles">
+                                    <h3>nombre del producto</h3>
+                                    <p>
+                                        ipsum dolor sit amet.
+                                        <span class="precio">$20.000</span>
+                                    </p>
+                                </div>
+                              
+                                <div class="cancelar"><i class="fa-solid fa-xmark"></i></div>
+                            </div>
+                          -->
+                        </div>
+                        <div class="subtotal">Subtotal: $0.00</div>
+                        <div class="boton" id="btnPagar" onclick="pagar()">Pagar</div>
+                        <div class="boton" id="btnLimpiar" onclick="limpiarcarrito()">Vaciar Carrito</div>
+                        </div>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="shop-section">
+            <div class="card-wrapper">
+              <div data-id="10" class="card-item">
+                <img src="img/hg1.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                    >
+      
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div data-id="11" class="card-item">
+                <img src="img/hg2.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </span>
+      
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- product 3 -->
+              <div data-id="12" class="card-item">
+                <img src="img/hg2.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                    >
+      
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- product 4 -->
+              <div data-id="13" class="card-item">
+                <img src="img/hg2.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </span>
+      
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+              <!-- product 5 -->
+              <div data-id="14" class="card-item">
+                <img src="img/hg2.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                    >
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- product 6 -->
+              <div data-id="15" class="card-item">
+                <img src="img/hg2.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </span>
+      
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- product 7 -->
+              <div data-id="16" class="card-item">
+                <img src="img/hg2.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </span>
+      
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- product 8 -->
+              <div data-id="17" class="card-item">
+                <img src="img/hg2.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                    >
+      
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+      
+              <!-- product 9 -->
+      
+              <div data-id="18" class="card-item">
+                <img src="img/hg2.png" />
+                <div class="details">
+                  <h3>Item Name</h3>
+                  <p>
+                    <span
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span
+                    >
+      
+                    <span class="price">precio:$23.44</span>
+                    <span class="boton_añadir_al_carrito">Add To Cart</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer>
+            <div class="grid_miniFooter ">
+                <h3>¿buscas un kit o figura en particular?</h3>
+                <h1><a href="contacto.html">¡envianos un mail aqui!</a></h1>
+            </div>
+        </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="https://kit.fontawesome.com/1d948d3661.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

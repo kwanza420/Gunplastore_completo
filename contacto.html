@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/1d948d3661.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/contacto.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullFrontal:hobbystore</title>
+</head>
+<body>
+    <header class="cajasuperior"> 
+        <nav class="navlist">
+            <h1 onclick="volver()">FullFrontal GunplaStore</h1>
+            <ul class="minicaja">
+                <div class="link-header"><li><a href="kits.html">Kits Gundam</a></li></div>
+                <div class="link-header"><li><a href="suplementos.html">suplementos</a></li></div>
+                <div class="link-header"><li><a href="proximosingresos.html">proximos ingresos</a></li></div>
+                <div class="caja_carrito">
+                    <div class="icono_carrito">
+                        <i id="icono" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div id="resto" class="resto_caja hide">
+                        <h2>carro de compras</h2>
+                        <div class="wrapper">
+                          <!--
+                            <div class="item_carrito">
+                                <img src="img/frutilla.jpg" alt="imagen de prueba" />
+                                <div class="detalles">
+                                    <h3>nombre del producto</h3>
+                                    <p>
+                                        ipsum dolor sit amet.
+                                        <span class="precio">$20.000</span>
+                                    </p>
+                                </div>
+                              
+                                <div class="cancelar"><i class="fa-solid fa-xmark"></i></div>
+                            </div>
+                          -->
+                        </div>
+                        <div class="subtotal">Subtotal: $0.00</div>
+                        <div class="boton" id="btnPagar" onclick="pagar()">Pagar</div>
+                        <div class="boton" id="btnLimpiar" onclick="limpiarcarrito()">Vaciar Carrito</div>
+                        </div>
+            </ul>
+        
+        </nav>  
+    </header> 
+    <main>
+    <div class="grid">
+     <form class="formulario" action="https://formspree.io/f/mzzplygg" method="POST">
+        <h1>contactanos!</h1>
+         <label><h2>ingresa tu correo:</h2> <input class="cajamail" type="email" name="email" placeholder="ingresa tu email" ></label>
+         <label><h2>escribinos tu consulta:</h2> <textarea class="cajamensaje" name="message" placeholder="ingresa tu mensaje"></textarea> </label>
+     </form>
+    <div class="FaQ">
+        <h1>FaQ</h1>
+    
+        <h2>item</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur cumque praesentium ipsam veritat
+        is at, necessitatibus possimus saepe expedita illum placeat sint odio aliquid, nulla ullam quidem, neque esse libero.</p>
+
+        <h2>item</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur cumque praesentium ipsam veritat
+        is at, necessitatibus possimus saepe expedita illum placeat sint odio aliquid, nulla ullam quidem, neque esse libero.</p>
+        
+        <h2>item</h2>
+        ..
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur cumque praesentium ipsam veritat
+        is at, necessitatibus possimus saepe expedita illum placeat sint odio aliquid, nulla ullam quidem, neque esse libero.</p>
+    </div>
+    </div>
+    
+    </main>
+    <footer class="grid_miniFooter"><p>Lorem ipsum dolor sit amet.</p></footer>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

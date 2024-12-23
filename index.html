@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/1d948d3661.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullFrontal:hobbystore</title>
+</head>
+<body>
+    
+    <header class="cajasuperior"> 
+        <nav class="navlist">
+            <h1>FullFrontal GunplaStore</h1>
+            <ul class="minicaja">
+                <div class="link-header"><li><a href="kits.html">Kits Gundam</a></li></div>
+                <div class="link-header"><li><a href="suplementos.html">suplementos</a></li></div>
+                <div class="link-header"><li><a href="proximosingresos.html">proximos ingresos</a></li></div>
+                <div class="caja_carrito">
+                    <div class="icono_carrito">
+                        <i id="icono" class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div id="resto" class="resto_caja hide">
+                        <h2>carro de compras</h2>
+                        <div class="wrapper">
+                          <!--
+                            <div class="item_carrito">
+                                <img src="img/frutilla.jpg" alt="imagen de prueba" />
+                                <div class="detalles">
+                                    <h3>nombre del producto</h3>
+                                    <p>
+                                        ipsum dolor sit amet.
+                                        <span class="precio">$20.000</span>
+                                    </p>
+                                </div>
+                              
+                                <div class="cancelar"><i class="fa-solid fa-xmark"></i></div>
+                            </div>
+                          -->
+                        </div>
+                        <div class="subtotal">Subtotal: $0.00</div>
+                        <div class="boton" id="btnPagar" onclick="pagar()">Pagar</div>
+                        <div class="boton" id="btnLimpiar" onclick="limpiarcarrito()">Vaciar Carrito</div>
+                        </div>
+            </ul>
+        
+        </nav>  
+    </header> 
+    <main>
+    <br>
+    <div class="grid">
+        <h1 class="micro_header">bienvenido a FullFrontal GunplaStore!</h1>
+        <img class="h_img" src="img/gunpla1.png" alt="foto ilustrativa de un modelo plastico gunpla armado">
+        <div class="cubos">
+         <div class="grid-cubo1 sub ">
+            <h2>titulo1</h2>
+            <p>loreLorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum voluptas debitis! Natus, exercitationem quis odio optio magni ipsam neque vel ipsum laudantium error similique aliquid necessitatibus omnis molestiae asperiores!</p>
+            <img src="img/gunpla1.png" alt="">
+            </div>
+         <div class="grid_cubo2 sub">
+            <h2>titulo1</h2>
+            <p>Lorem ipsum dolor sit a</p>
+            <img src="img/gunpla1.png" alt="">
+            </div>
+         <div class="grid_cubo3 sub">
+            <h2>titulo1</h2>
+            <p>Lorem ipsum dolor sit a</p>
+            <img src="img/gunpla1.png" alt="">
+            </div>
+         <div class="grid_cubo4 sub">
+            <h2>titulo1</h2>
+            <p>Lorem ipsum dolor sit a</p>
+            <img src="img/gunpla1.png" alt="">
+            </div>
+         </div>
+    </div>
+    </main>
+    <footer>
+        <div class="grid_miniFooter ">
+            <h3>¿buscas un kit o figura en particular?</h3>
+            <h1><a href="contacto.html">¡envianos un mail aqui!</a></h1>
+        </div>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
